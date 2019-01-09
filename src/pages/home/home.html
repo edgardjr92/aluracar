@@ -8,8 +8,9 @@
 
 <ion-content padding>
   <ion-list>
-    <ion-item>Hyundi HB20</ion-item>
-    <ion-item>GM Onix</ion-item>
-    <ion-item>Fiat Argo</ion-item>
+    <ion-item *ngFor="let carro of carros">
+      <h2>{{ carro.nome }}</h2>
+      <p>R$ {{ carro.preco }}</p>
+    </ion-item>
   </ion-list>
 </ion-content>
